@@ -1,0 +1,39 @@
+PODS:
+  - DropDown (2.3.12)
+  - ExpyTableView (1.0)
+  - ObjectMapper (3.5.1)
+  - "ObjectMapper+Realm (0.6)":
+    - ObjectMapper
+    - RealmSwift
+  - Realm (3.14.0):
+    - Realm/Headers (= 3.14.0)
+  - Realm/Headers (3.14.0)
+  - RealmSwift (3.14.0):
+    - Realm (= 3.14.0)
+
+DEPENDENCIES:
+  - DropDown (= 2.3.12)
+  - ExpyTableView (= 1.0)
+  - "ObjectMapper+Realm (= 0.6)"
+  - RealmSwift (= 3.14.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DropDown
+    - ExpyTableView
+    - ObjectMapper
+    - "ObjectMapper+Realm"
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  DropDown: 0bcc278799ec11a3d34ce1aac9367fbbaf5423d9
+  ExpyTableView: 75fe6494d4613fd3dc4bd965cce6e14cec7e2223
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  "ObjectMapper+Realm": 4cf44ed3202a73f08594e21e13eb3f8aa9b5a664
+  Realm: 221b25919bb5a010a3c597d707f8df3492dcd93a
+  RealmSwift: 28f22dfa6a27b9a778cfb09471558b6afcf1022c
+
+PODFILE CHECKSUM: ddd0f880fa53d0280d7b7de761a7c3e6b3a2a09c
+
+COCOAPODS: 1.6.1
