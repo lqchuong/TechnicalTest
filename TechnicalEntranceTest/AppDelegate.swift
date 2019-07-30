@@ -12,13 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigator: UINavigationController?
+    let animationProxy = LeftToRightTransitionProxy()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let main = MainViewController()
+        let navigationController =  UINavigationController(rootViewController: main)
+        navigationController.navigationBar.isTranslucent = false
+        window = UIWindow(frame: UIScreen.main.bounds)
+        configureNavigationBar()
+        window?.rootViewController = navigationController
+        animationProxy.setup(with: navigationController)
+        window?.makeKeyAndVisible()
         return true
     }
-
+    func configureNavigationBar() {
+        let navigationBarAppearace = UINavigationBar.appearance()
+        let blue = UIColor(red: 49.0/255.0, green: 127.0/255.0, blue: 238.0/255.0, alpha: 1.0)
+        navigationBarAppearace.barStyle = .default
+        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.init(cgColor: blue.cgColor)]
+      
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

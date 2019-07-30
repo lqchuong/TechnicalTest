@@ -1,0 +1,35 @@
+{
+    "DS":[
+        {
+            "ID":1,
+            "Name":"Vegeterian",
+            "Logo":"logo1.png"
+        },
+        {
+            "ID":2,
+            "Name":"Gluten-Free",
+            "Logo":"logo1.png"
+        },
+        {
+            "ID":3,
+            "Name":"Healthy",
+            "Logo":"logo1.png"
+        },
+        {
+            "ID":4,
+            "Name":"Italian",
+            "Logo":"logo1.png"
+        },
+        {
+            "ID":5,
+            "Name":"Pizza",
+            "Logo":"logo1.png"
+        },
+        {
+            "ID":6,
+            "Name":"SteakHouse",
+            "Logo":"logo1.png"
+        }
+        ]
+}
+        
