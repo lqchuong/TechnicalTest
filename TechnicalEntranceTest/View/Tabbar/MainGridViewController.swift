@@ -26,6 +26,10 @@ class MainGridViewController: UIViewController {
         initCollection()
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     func getListProduct(){
         let file = Bundle.main.path(forResource: "Product", ofType: "json")
         let u = URL(fileURLWithPath: file!)
