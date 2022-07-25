@@ -7,6 +7,6 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=/usr/bin/java -jar /TechnicalTest/royal-healthy-care-0.0.1-SNAPSHOT.jar
+ExecStart=/usr/bin/java -jar /root/TechnicalTest/royal-healthy-care-0.0.1-SNAPSHOT.jar
 [Install]
 WantedBy=multi-user.target
