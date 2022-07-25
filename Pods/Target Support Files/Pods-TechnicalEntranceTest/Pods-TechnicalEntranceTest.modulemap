@@ -1,6 +1,0 @@
-framework module Pods_TechnicalEntranceTest {
-  umbrella header "Pods-TechnicalEntranceTest-umbrella.h"
-
-  export *
-  module * { export * }
-}
